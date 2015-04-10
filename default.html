@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo Intranet Site</title>
+    <link type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link type="text/css" rel="stylesheet" href="yamm.css">
+    <link type="text/css" rel="stylesheet" href="css/weather-icons.css">
+    <link type="text/css" rel="stylesheet" href="IntranetHome.css">
+</head>
+<body>
+    
+        <nav class="navbar navbar-default yamm">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/USSTRATCOM_emblem.jpg" style="max-height:80px;"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown yamm-fw">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Command Links <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                    <div class="yamm-content">
+                        <div class="col-sm-4">
+                            <h3>Frequently Used</h3>
+                            <li>Most frequently clicked link</li>
+                            <li>Most faorited link</li>
+                            <li>Most used sharepoint site link</li>
+                            <li></li>
+                            <h3>Operations</h3>
+                            <li>SKIWeb</li>
+                            <li>CDRUSSTRATCOM Dashboard</li>
+                            <li>Campaign</li> 
+                            
+                            <h3></h3>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>Administrative</h3>
+                            <li>SKIWeb</li>
+                            <li>CDRUSSTRATCOM Dashboard</li>
+                            <li>Campaign</li>                            
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>Other</h3>
+                            <li>SKIWeb</li>
+                            <li>CDRUSSTRATCOM Dashboard</li>
+                            <li>Campaign</li>                            
+                        </div>
+                        
+                    </div>              
+            </ul>
+        </li>
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Links <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+        
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right">
+          <li>
+              <div id="worldClock" style="font-size:xx-large; color:silver;"><span></span>Z</div>
+          </li>
+        <li><div style="color:silver; font-size:x-large; margin:4px; margin-left:16px;"><i class="wi wi-day-sleet"></i>H:73</div>
+          </li>
+        <li><a href="#" onclick="Stratcom.ShowPreferences();">Preferences</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+        
+    
+    <div class="container-fluid flipboard" id="mainView">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="col-sm-12" id="newsContainer">
+                    <div class="contentBox">
+                        <h2>Command News</h2>              
+                        <img class="img-rounded img-responsive center-block" src="images/admiralCongress.JPG" style="max-height:600px;">
+                        <h4>3/16/15 - Admiral Haney testifies before the House Armed Services Committee</h4>
+                    </div>            
+                    <div class="col-sm-4 img-sm-advert">
+                        <img class="img-rounded img-responsive center-block" src="images/sag.jpg" style="max-height:100px;">
+                        <p>93rd SAG Plenary</p></div>
+                    <div class="col-sm-4 img-sm-advert">
+                        <img class="img-rounded img-responsive center-block" src="images/LightningAroundWorld.jpg" style="max-height:100px;">
+                        <p>Exercise Global Lightning 15</p>
+                    </div>
+                    <div class="col-sm-4 img-sm-advert" style="overflow:hidden;">               
+                        <p class="text-center">Something exciting the Command needs to know about?  You might get to have yours news items displayed here.</p>
+                        <p class="text-center"><a href="newsRotatorHelp.html">Find out more...</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">POSTURES</div>
+                    </div>
+                </div>
+            </div>        
+            <div class="col-sm-8">
+                <div class="col-sm-12">
+                        <div class="alert alert-warning" role="alert">
+                            Hazardous weather watch in effect.
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            Message from CDRUSSTRATCOM
+                            <div class="well">
+                                Congratulations on a successful exercise.  Thank you for helping keep USSTRATCOM prepared.
+                            </div>
+                        </div>
+                
+                    <div class="panel panel-default" id="systemStatus">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Systems Status</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div>Facilities: Chiller 2 down for maintenance.</div>
+                            <div>NIPR - Network performance issues with external sites.<br>
+                                SIPR - DEE is not accessible.
+                            </div>                        
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-6">
+                    <div class="contentBox">
+                        <h2>Strat Solutions</h2>
+                        <div class="panel panel-success solution">
+                            <div class="panel-heading"><span class="label label-default">5</span> ALL - How can people outside USSSTRATCOM get access to the SharePoint?</div>
+                            <div class="panel-body"></div>
+                        </div>
+                        <div class="panel panel-warning solution">                            
+                            <div class="panel-heading"><span class="label label-default">5</span> CIV - Accounting for Physical Fitness time</div>
+                            <div class="panel-body"></div>
+                        </div>
+                        <div class="panel panel-warning solution">
+                            <div class="panel-heading"><span class="label label-default">0</span> ALL - What type of devides can I bring to work with me?</div>
+                            <div class="panel-body"></div>
+                        </div>
+                        <div class="panel panel-success solution">
+                            <div class="panel-heading"><span class="label label-default">2</span> ALL - What type of devides can I bring to work with me?</div>
+                            <div class="panel-body"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="contentBox">
+                        <h2>My Event Feed</h2>
+
+                        <div class="alert alert-success event" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            This alert can be dismissed.
+                        </div>
+                        <div class="alert alert-warning event" role="alert">
+                            EXORD 15-02 Released
+                        </div>
+
+                        <div class="alert alert-info event" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            New Cyber Awareness Articles Posted <span class="badge">7</span>
+                        </div>                        
+                        
+                        <div class="alert alert-danger event" role="alert">
+                            This alert cannot be dismissed.
+                        </div>
+
+                        <p>Info feed goes here.</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    
+    <div id="preferences">
+    these are the preferences....
+    </div>
+    
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="IntranetHome.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "Intranet",
+  "version": "0.2.0",
+  "authors": [
+    "Kevin Milam <kevin.milam@gmail.com>"
+  ],
+  "description": "Intranet Home Page Concept",
+  "license": "MIT",
+  "homepage": "www.kevinmilam.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.3"
+  }
+}
